@@ -1,8 +1,116 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+
+.header__top {
+    background-color: #f3f1ee;
+    height: 100px;
 }
-*,
-*::before,
-*::after{
-    border-spacing: inherit;
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__btn {
+    margin: 10px auto;
+
+    a {
+        padding: 10px 18px;
+        font-size: 14px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 25px;
+        background-color:#0674ec;
+        color: #fff;
+        margin-right: 215px;
+    }
+
+}
+
+.header__name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+
+    &-name {
+        max-width: 100px;
+
+        span {
+            color: #0674ec;
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+}
+.ava {
+    margin-right: 20px;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list {
+    li {
+        display: inline-block;
+        padding: 33px 0;
+
+        &+li {
+            margin-left: 25px;
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #333333;
+        font-size: 15px;
+    }
+}
+.header__menu-form{
+    height: 45px;
+    width: 365px;
+    position: relative;
+    border: 1px solid rgb(217, 223, 229);
+    border-radius: 25px;
+
+    input{
+        border: none;
+        padding: 0 20px 0 20px;
+        color: #898f96;
+        font-style: 15px;
+        overflow: hidden;
+        width: 250px;
+        outline: none;
+    } 
+    button{ 
+        height: 45px;
+        width: 70px;
+        border-radius: 25px;
+        position: relative;
+        background-color: #0674ec;
+        border: none;
+        right: 0;
+        top: 0;
+       
+    }
+}
+.header__form{
+    text-decoration: none;
+    border: none;
+}
+
+
+.search{
+    height: 730px;
+}
+
+  
