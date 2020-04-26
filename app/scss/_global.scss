@@ -9,7 +9,10 @@ html{
 a{
     display: inline-block;
     text-decoration: none;
+    color: #868c96;
+    outline: none;
 }
+
 ul,
 li{
     margin: 0;
@@ -29,3 +32,9 @@ body{
 .rate-star{
     display: inline-block;
 }
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+

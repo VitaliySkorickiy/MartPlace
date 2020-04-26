@@ -16,6 +16,15 @@ $(function(){
         readOnly: true
     });
 
+    $('.feed__slid').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow:'<button class="slick-arrow slick-prev"><img src="../app/img/icons/chevron-left.png" alt=""></button>',
+        nextArrow:'<button class="slick-arrow slick-next"><img src="../app/img/icons/chevron-right.png" alt=""></button>',
+
+    });
+
     var mixer = mixitup('.release__product-wrapper');
 
 
