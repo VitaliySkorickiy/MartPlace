@@ -10,6 +10,8 @@
 
 // ================================================
 
+
+
 .header__top {
     background-color: #f3f1ee;
     height: 100px;
@@ -85,8 +87,108 @@
         font-weight: 700;
         color: #333333;
         font-size: 15px;
+
+        &:hover {
+            color: #0674ec;
+            transition: all .3s;
+        }
     }
 }
+
+
+
+// ==================
+
+
+
+.drop-down__list-menu {
+    position: relative;
+
+    .drop-down__list {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        position: absolute;
+        width: 230px;
+        background-color: #fff;
+        top: 84px;
+        left: 0;
+        border-top: 1px solid #0674ec;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+
+        li {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            &:hover {
+                background-color: #0674ec;
+
+                & a {
+                    color: #fff;
+                    transition: all .4s;
+                }
+            }
+
+            a {
+                line-height: 44px;
+                text-transform: none;
+                padding: 0 0 0 10px;
+
+            }
+        }
+    }
+}
+
+.drop-down__list-menu:hover .drop-down__list {
+
+    transition: all .5s;
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    padding: 20px;
+}
+
+
+.drop-down__list-menu .drop-down__list.big {
+    display: flex;
+    width: 1140px;
+    left: -440px;
+    max-height: 610px;
+    li{
+
+        a{
+            font-size: 16px;
+            color: #000;
+            border-bottom: 1px solid #e8ebf0;
+            padding: 0;
+        }
+    }
+    li + li {
+        margin-left: 40px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========================
+
+
 
 .header__menu-form {
     height: 45px;
@@ -167,6 +269,7 @@
     &:hover {
         background-color: #fff;
         color: #0674ec;
+        transition: all .5s;
     }
 }
 
@@ -1065,20 +1168,23 @@
         }
     }
 }
-.soc{
+
+.soc {
     margin-top: 45px;
-    a{
+
+    a {
         margin-right: 10px;
     }
 }
 
-.footer__copy{
+.footer__copy {
     background-color: #192027;
     color: #999999;
     padding-top: 35px;
     padding-bottom: 40px;
     text-align: center;
-    a{
+
+    a {
         color: #fff;
     }
 }
